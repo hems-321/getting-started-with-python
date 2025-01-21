@@ -26,13 +26,24 @@ turtle.forward(150)
 turtle.pendown()
 
 def star():
-  # Star
+  for i in range(0, 5):
+    turtle.pencolor("red")
+    turtle.forward(100)
+    turtle.right(60)
 
 def square():
-  # Square
+  for i in range(0, 4):
+    turtle.pencolor("green")
+    turtle.forward(60)
+    turtle.right(60)
+
+
 
 def hexagon():
-  # Hexagon
+  for i in range(0, 6):
+    turtle.pencolor("orange")
+    turtle.forward(100)
+    turtle.right(60)
 
 selection = input("1. Star\n2. Square\n3. Hexagon\nSelect a number: ")
 if selection == "1":
