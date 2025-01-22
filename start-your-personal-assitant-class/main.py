@@ -1,12 +1,19 @@
-# Give the class a name
-class:
-  # Add an __init__ function here
+class PersonalAssistant:
 
-  # Complete the get_contact function code
+  def __init__(self):
+    self.contacts = {
+        'Jess': 'PM', 'Hemlata': 'SSE', 'Alpa': 'TL'
+    }
+    self.todos = []
+
+
   def get_contact(self, name):
+    if name in self.contacts:
+        return self.contacts[name]
+    else:
+        return "No contact with that name!"
 
 
-# Code to test output of the class
+# Code to test the class
 assistant = PersonalAssistant()
-# Change name to one from your contacts
-print(assistant.get_contact("Chelsea"))
+print(assistant.get_contact("Hemlata"))
